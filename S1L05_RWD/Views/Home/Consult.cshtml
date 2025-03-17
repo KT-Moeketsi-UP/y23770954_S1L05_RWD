@@ -1,28 +1,51 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Consult";
 }
 
-<h2>Consult</h2>
+<h2>Book a Consultation with Your Lecturer</h2>
 
-<form>
-    <div class="mb-3">
-        <label for="firstname" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="firstname" name="firstname" required>
-        <div class="invalid-feedback">Please enter your first name.</div>
+<form action="#" method="post" class="needs-validation" novalidate>
+    <h2>Your Details</h2>
+
+    <!-- Row for First Name and Last Name on the same line -->
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter your first name.
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" class="form-control" required>
+            <div class="invalid-feedback">
+                Please enter your last name.
+            </div>
+        </div>
     </div>
 
-    <div class="mb-3">
-        <label for="lastname" class="form-label">Last Name</label>
-        <input type="text" class="form-control" id="lastname" name="lastname" required>
-        <div class="invalid-feedback">Please enter your last name.</div>
+    <!-- Email Section -->
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+        <div class="invalid-feedback">
+            Please provide a valid email address.
+        </div>
     </div>
 
-    <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-        <div class="invalid-feedback">Please enter a valid email address.</div>
+    <!-- Comments Section -->
+    <div class="form-group">
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" class="form-control" rows="4" required></textarea>
+        <div class="invalid-feedback">
+            Please enter your comments.
+        </div>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-success">Submit</button>
 </form>
+
+
+

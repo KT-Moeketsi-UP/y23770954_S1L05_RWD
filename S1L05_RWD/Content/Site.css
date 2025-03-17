@@ -23,3 +23,23 @@ body {
     margin-bottom: 60px;
     background-color: var(--light);
 }
+
+/* Site-wide form control styling */
+.form-control {
+    margin-bottom: 10px;
+}
+
+.invalid-feedback {
+    font-size: 0.875em;
+}
+
+/* Custom green submit button */
+.btn-success {
+    background-color: #28a745; /* Green color */
+    border-color: #28a745; /* Green border */
+}
+
+    .btn-success:hover {
+        background-color: #218838; /* Darker green for hover effect */
+        border-color: #1e7e34; /* Darker green for border on hover */
+    }
